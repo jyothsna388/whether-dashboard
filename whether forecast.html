@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+        <div class="search-bar">
+            <input type="text" id="city-input" placeholder="Enter a City Name">
+            <button onclick="searchWeather()">Search</button>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Qp51rHttW2ZBRLru4hspZzxdJ3t6tXG83g&s" width="150" alt="Weather Icon"/>
+        </div>
+
+        <div id="current-weather">
+            <h2></h2>
+            <p>Temperature: <span id="temp"></span></p>
+            <p>Wind: <span id="wind"></span></p>
+            <p>Humidity: <span id="humidity"></span></p>
+            <p>Weather: <span id="weather"></span></p>
+        </div>
+
+        <div id="forecast">
+            <h2>5-Day Forecast</h2>
+            <div class="forecast-container" id="forecast-container">
+                <!-- Forecast cards will appear here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
